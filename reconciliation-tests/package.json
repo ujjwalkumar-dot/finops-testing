@@ -11,6 +11,8 @@
        "CREATE":"python -m pytest CREATE.py -v",
        "REG-001": "python -m pytest utils/pipeline/pipeline_creation/REG-001.py -v",
        "REG-002": "python -m pytest utils/pipeline/pipeline_creation/REG-002.py -v",
-       "REG-003": "python -m pytest utils/pipeline/Data_Upload/REG-003.py -v"
+       "REG-003": "python -m pytest utils/pipeline/Data_Upload/REG-003.py -v",
+       "REG-004": "python -m pytest utils/pipeline/Data_Upload/REG-004.py -v"
     }
+    
 }

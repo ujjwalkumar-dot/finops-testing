@@ -1,47 +1,14 @@
 const express = require("express");
 const { exec } = require("child_process");
 const cors = require("cors");
+const { scripts } = require("../scripts");
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 // CONFIG DRIVEN SCRIPTS
-const scripts ={
-  pipeline:{
-    scripts: [
-  {
-    id: "REG-001",
-    name: "Regression 001",
-    command: "npm run REG-001",
-    description:"This is used to create pipeline",
-    cwd: "../reconciliation-tests"
-  },
-  {
-    id: "REG-002",
-    name: "Regression 002",
-    command: "npm run REG-002",
-    cwd: "../reconciliation-tests"
-  },
-  {
-    id: "REG-003",
-    name: "Regression 003",
-    command: "npm run REG-003",
-    cwd: "../reconciliation-tests"
-  }
-]
-  },
-  reference:{
-        scripts: [
-  {
-    id: "REG-006",
-    name: "Regression 006",
-    command: "npm run REG-001",
-    description:"This is used to create pipeline",
-    cwd: "../reconciliation-tests"
-  },]
-  }
-};
+
 
 // GET ALL SCRIPTS
 app.get("/scripts", (req, res) => {
@@ -67,6 +34,6 @@ app.post("/run", (req, res) => {
   });
 });
 
-app.listen(5000, () => {
-  console.log("Server running on port 5000");
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
 });

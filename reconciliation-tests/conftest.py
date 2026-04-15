@@ -14,4 +14,22 @@ def pytest_addoption(parser):   # this function is used to add options to the py
         default=datetime.datetime.now().strftime("%Y%m%d%H%M%S"),
         help="Pipeline code passed from npm"
     )
+    parser.addoption(
+        "--reference_data_name",
+        action="store",
+        default=''.join(random.choices(string.ascii_letters, k=5)),
+        help="Reference table name passed from npm"
+    )
+    parser.addoption(
+        "--reference_data_name2",
+        action="store",
+        default=''.join(random.choices(string.ascii_letters, k=5)),
+        help="Reference table name passed from npm"
+    )
+    parser.addoption(
+        "--reference_data_name3",
+        action="store",
+        default=''.join(random.choices(string.ascii_letters, k=5)),
+        help="Reference table name passed from npm"
+    )
     

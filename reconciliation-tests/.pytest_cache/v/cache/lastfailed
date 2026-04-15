@@ -1,5 +1,4 @@
 {
   "utils/pipeline/pipeline_creation/REG-001.py::test_full_reconciliation_flow": true,
-  "utils/pipeline/pipeline_creation/REG-002.py::test_full_reconciliation_flow": true,
-  "utils/pipeline/Data_Upload/REG-003.py::test_full_reconciliation_flow": true
+  "dev.py::test_full_reconciliation_flow": true
 }

@@ -1,5 +1,7 @@
 [
+  "dev.py::test_full_reconciliation_flow",
   "utils/pipeline/Data_Upload/REG-003.py::test_full_reconciliation_flow",
+  "utils/pipeline/Data_Upload/REG-004.py::test_full_reconciliation_flow",
   "utils/pipeline/pipeline_creation/REG-001.py::test_full_reconciliation_flow",
   "utils/pipeline/pipeline_creation/REG-002.py::test_full_reconciliation_flow"
 ]
