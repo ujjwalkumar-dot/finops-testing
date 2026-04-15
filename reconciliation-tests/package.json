@@ -1,0 +1,16 @@
+{
+    "scripts": {
+       "new": "python -m pytest TEST.py -v",
+       "CP": "python -m pytest TO_CREATE_PIPELINE.py -v",
+       "prop": "python -m pytest CreatePipelineStep2.py -v",
+       "PMF":"python -m pytest UPLOAD_MULTI_FILE.py -v",
+       "dev":"python -m pytest dev.py -v",
+       "try":"python -m pytest top.py -v",
+       "newp":"python -m pytest newp.py -v",
+       "newr":"python -m pytest redef.py -v",
+       "CREATE":"python -m pytest CREATE.py -v",
+       "REG-001": "python -m pytest utils/pipeline/pipeline_creation/REG-001.py -v",
+       "REG-002": "python -m pytest utils/pipeline/pipeline_creation/REG-002.py -v",
+       "REG-003": "python -m pytest utils/pipeline/Data_Upload/REG-003.py -v"
+    }
+}
